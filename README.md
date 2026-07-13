@@ -1,5 +1,7 @@
 # BookStore - MERN Stack Web Application
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/navyachandhrika/bookstore-mern)
+
 A full-stack online bookstore built with the **MERN Stack** (MongoDB, Express.js, React.js, Node.js). Features user authentication, book browsing with filters, a shopping cart, checkout, order management, reviews, and an admin dashboard.
 
 ---
