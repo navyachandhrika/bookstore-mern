@@ -1,10 +1,10 @@
-# 📚 BookStore — MERN Stack Web Application
+# BookStore - MERN Stack Web Application
 
 A full-stack online bookstore built with the **MERN Stack** (MongoDB, Express.js, React.js, Node.js). Features user authentication, book browsing with filters, a shopping cart, checkout, order management, reviews, and an admin dashboard.
 
 ---
 
-## ✨ Features
+## Features
 
 - **User Authentication** — Register, login, JWT-based sessions
 - **Book Browsing** — Search, filter by genre/author/language, sort, pagination
@@ -19,7 +19,7 @@ A full-stack online bookstore built with the **MERN Stack** (MongoDB, Express.js
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer      | Technology                                  |
 |------------|---------------------------------------------|
@@ -33,7 +33,7 @@ A full-stack online bookstore built with the **MERN Stack** (MongoDB, Express.js
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 bookstore-mern/
@@ -56,7 +56,7 @@ bookstore-mern/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ Open **http://localhost:3000** in your browser.
 
 ---
 
-## 🔑 API Endpoints
+## API Endpoints
 
 ### Authentication
 | Method | Endpoint              | Access  | Description           |
@@ -153,7 +153,7 @@ Open **http://localhost:3000** in your browser.
 
 ---
 
-## 🧪 Demo Accounts
+## Demo Accounts
 
 | Role  | Email                  | Password    |
 |-------|------------------------|-------------|
