@@ -1,0 +1,18 @@
+# render.yaml - Render Infrastructure as Code configuration
+# Allows one-click deployment of the entire MERN stack Bookstore application.
+services:
+  - type: web
+    name: bookstore-mern-app
+    env: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      # MONGODB_URI is optional. If left blank, server.js will auto-fallback 
+      # to mongodb-memory-server and auto-seed the demo database on startup!
+      - key: MONGODB_URI
+        sync: false
