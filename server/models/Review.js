@@ -1,0 +1,44 @@
+/**
+ * models/Review.js - Mongoose schema for book reviews.
+ * Denormalizes userName to avoid extra populates on each request.
+ */
+import mongoose from 'mongoose';
+
+const reviewSchema = new mongoose.Schema(
+  {
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      required: [true, 'User is required'],
+    },
+    // Denormalized for display performance
+    userName: {
+      type: String,
+      required: true,
+    },
+    book: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Book',
+      required: [true, 'Book reference is required'],
+    },
+    rating: {
+      type: Number,
+      required: [true, 'Rating is required'],
+      min: [1, 'Rating must be at least 1'],
+      max: [5, 'Rating cannot exceed 5'],
+    },
+    comment: {
+      type: String,
+      required: [true, 'Comment is required'],
+      trim: true,
+      minlength: [5, 'Comment must be at least 5 characters'],
+    },
+  },
+  { timestamps: true }
+);
+
+// Ensure one review per user per book
+reviewSchema.index({ user: 1, book: 1 }, { unique: true });
+
+const Review = mongoose.model('Review', reviewSchema);
+export default Review;
