@@ -49,7 +49,15 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'BookStore API is running 📚' });
 });
 
-// ─── Global Error Handler ─────────────────────────────────────────────────────
+// ─── Serve React build in production ──────────────────────────────────────
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/dist')));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+  });
+}
+
+// ─── Global Error Handler ─────────────────────────────────────────────────
 app.use(errorHandler);
 
 // ─── Database Connection, Fallback & Seeding ─────────────────────────────────
