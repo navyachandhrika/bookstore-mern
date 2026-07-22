@@ -8,16 +8,16 @@ A full-stack online bookstore built with the **MERN Stack** (MongoDB, Express.js
 
 ## Features
 
-- **User Authentication** — Register, login, JWT-based sessions
-- **Book Browsing** — Search, filter by genre/author/language, sort, pagination
-- **Book Details** — Cover art, descriptions, ratings, stock status
-- **Reviews** — Submit and read community reviews with star ratings
-- **Shopping Cart** — Add/remove/update quantities, real-time totals
-- **Checkout** — Shipping address + simulated payment
-- **Order History** — View past orders with expandable details
-- **Admin Dashboard** — Add/edit/delete books, manage order statuses
-- **Responsive Design** — Mobile, tablet, and desktop optimized
-- **Dark Mode UI** — Premium glassmorphic design with animations
+- **User Authentication** - Register, login, JWT-based sessions
+- **Book Browsing** - Search, filter by genre/author/language, sort, pagination
+- **Book Details** - Cover art, descriptions, ratings, stock status
+- **Reviews** - Submit and read community reviews with star ratings
+- **Shopping Cart** - Add/remove/update quantities, real-time totals
+- **Checkout** - Shipping address + simulated payment
+- **Order History** - View past orders with expandable details
+- **Admin Dashboard** - Add/edit/delete books, manage order statuses
+- **Responsive Design** - Mobile, tablet, and desktop optimized
+- **Dark Mode UI** - Premium glassmorphic design with animations
 
 ---
 
@@ -164,6 +164,6 @@ Open **http://localhost:3000** in your browser.
 
 ---
 
-## 📜 License
+## License
 
 This project is built for educational and demonstration purposes.
